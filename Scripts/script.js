@@ -39,7 +39,7 @@ $('.read-button').on('click',function(event){
 
 ///Keep count of links on page////
 
-
+$('#saved-links').prepend($('article').length + ' ');
 
 
 
