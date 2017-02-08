@@ -11,7 +11,6 @@ $('#enter-button').on('click', function(e){
 
 
 
-
 ///Mark as "read"
 $('#side-bar').on('click', '.read-button', function(){
 	$(this).toggleClass('read');
@@ -30,9 +29,13 @@ $('#side-bar').on('click', '.read-button', function(){
 
 
 ////Delete URl//////
+var $deleteBtn = $('delete-button');
 
+$($deleteBtn).on('click', function(e) {
+	e.preventDefault();
+	$('#side-bar p').remove('<a>');
 
-
+});
 
 
 ///Disable links//////
@@ -64,9 +67,3 @@ $('#side-bar').on('click', '.read-button', function(){
 
 
 
-//input event listener//
-// $('#input-fields').on('click',function(e){
-// 	$webTitle =
-// 	$(this.#web-title).val();
-// 	$(this.#web-url).val();
-// });
