@@ -13,9 +13,10 @@ $('#enter-button').on('click', function(e){
 
 
 ///Mark as "read"
-$('.read-button').on('click',function(event){
-	var targetBtn = $(event.target);
-	targetBtn.toggleClass('read');
+$('#side-bar').on('click', '.read-button', function(){
+	$(this).toggleClass('read');
+	// var targetBtn = $(event.target);
+	// targetBtn.toggleClass('.read');
 });
 
 
