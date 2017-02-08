@@ -25,7 +25,7 @@ $('#enter-button').on('click', function(e){
 	checkFields();
 	$('#side-bar').append('<article><h2 class="bm-title">' + $('#web-title').val() + '</h2><hr><p class="bm-url"><a href="#">' + $('#web-url').val() + '</a></p><hr><button class="read-button">Read</button><button class="delete-button">Delete</button></article>');
 	var n = $('article').length;
-	$('#saved-links').text(n + ' Links Saved');
+	$('#saved-links').text(n + ' Saved Links ');
 		});
 
 
