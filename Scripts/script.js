@@ -1,20 +1,21 @@
 ///functions/////
 
-function checkFields (){
-	// $('form input[type="submit"]').prop('disabled', true);
-	console.log('blargh')
-  if($('#web-title').val() === '' || ($('#web-url').val() === '')){
-			$('form input[type="submit"]').prop('disabled',true);
-			console.log("blueb")
-	}else{
-				$('form input[type="submit"]').prop('disabled',false);
-	}
-}
+// function checkFields (){
+// 	$('form input[type="submit"]').prop('disabled', true);
+// 	$('#input-fields').on('keyup', function(){
+// 		if($('#web-title').val() === '' || ($('#web-url').val() === '')){
+// 				$('form input[type="submit"]').prop('disabled',true);
+// 				console.log("blueb")
+// 		}else{
+// 					$('form input[type="submit"]').prop('disabled',false);
+// 		}
+// 	})
+// }
+// function check
+// function errorMessage (){
 
-function errorMessage (){
 
-
-}
+// }
 
 
 

@@ -1,4 +1,5 @@
 body {
+	background-color: #455a64
 	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
@@ -6,7 +7,7 @@ body {
 }
 
 h1 {
-	font-size: 400%;
+	font-size: 40px;
 	font-weight: 800;
 	margin-bottom: 20px;
 	margin-top: 80px;
@@ -138,8 +139,8 @@ article	{
 	font-weight: 800;
 }
 /*******media queries*******************/
-@media screen and (min-width: 700px){
+/*@media screen and (min-width: 700px){
 	#bm-three, #bm-four{
 		display: block;
 	}
-}
+}*/
