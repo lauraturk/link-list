@@ -60,11 +60,9 @@ article	{
 	align-items: center;
 	background-color: #455A64;
 	color: #FFFFFF;
-	display: flex;
-	flex-wrap: wrap;
-	/*height: 568px;*/
+	height: 568px;
 	justify-content: center;
-	/*width: 320px;*/
+	width: 320px;
 	border: 3px solid blue;
 
 
@@ -72,7 +70,6 @@ article	{
 
 #main{
 	text-align: center;
-	flex-wrap: wrap;
 	width: 320px;
 	border: 3px solid orange;
 

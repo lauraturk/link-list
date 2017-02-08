@@ -1,11 +1,18 @@
 ///functions/////
 function checkFields (){
-	$('#enter-button').disabled = true;
-  if($('#web-title').val() === ' ' || ($('#web-url').val() === ' ')){
-			$('#enter-button').button('disabled');
+	// $('form input[type="submit"]').prop('disabled', true);
+	console.log('blargh')
+  if($('#web-title').val() === '' || ($('#web-url').val() === '')){
+			$('form input[type="submit"]').prop('disabled',true);
+			console.log("blueb")
 	}else{
-				$('#enter-button').disabled = false;
+				$('form input[type="submit"]').prop('disabled',false);
 	}
+}
+
+function errorMessage (){
+
+
 }
 
 
@@ -15,6 +22,7 @@ function checkFields (){
 ///Create bookmark w/user input
 $('#enter-button').on('click', function(e){
 	e.preventDefault();
+	checkFields();
 	$('#side-bar').append('<article><h2 class="bm-title">' + $('#web-title').val() + '</h2><hr><p class="bm-url"><a href="#">' + $('#web-url').val() + '</a></p><hr><button class="read-button">Read</button><button class="delete-button">Delete</button></article>');
 	var n = $('article').length;
 	$('#saved-links').text(n + ' Links Saved');
