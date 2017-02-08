@@ -1,9 +1,21 @@
 ///functions/////
+function checkFields (){
+	$('#enter-button').disabled = true;
+  if($('#web-title').val() === ' ' || ($('#web-url').val() === ' ')){
+			$('#enter-button').button('disabled');
+	}else{
+				$('#enter-button').disabled = false;
+	}
+}
+
+
+
+
 
 ///Create bookmark w/user input
 $('#enter-button').on('click', function(e){
 	e.preventDefault();
-	$('#side-bar').append('<article><h2 class="bm-title">' + $('#web-title').val() + '</h2><hr><p class="bm-url"><a href="#">' + $('#web-url').val() + '</a></p><hr><button class="read-button">Read</button><buttonclass="delete-button">Delete</button></article>');
+	$('#side-bar').append('<article><h2 class="bm-title">' + $('#web-title').val() + '</h2><hr><p class="bm-url"><a href="#">' + $('#web-url').val() + '</a></p><hr><button class="read-button">Read</button><button class="delete-button">Delete</button></article>');
 	var n = $('article').length;
 	$('#saved-links').text(n + ' Links Saved');
 		});
@@ -29,11 +41,8 @@ $('#side-bar').on('click', '.read-button', function(){
 
 
 ////Delete URl//////
-var $deleteBtn = $('delete-button');
-
-$($deleteBtn).on('click', function(e) {
-	e.preventDefault();
-	$('#side-bar p').remove('<a>');
+$('#side-bar').on('click', '.delete-button',function() {
+	  $(this).parent().remove();
 
 });
 
@@ -55,15 +64,3 @@ $($deleteBtn).on('click', function(e) {
 
 
 ///Count of read and unread links on page///
-
-
-
-
-
-
-
-
-
-
-
-
