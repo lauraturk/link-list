@@ -1,4 +1,10 @@
 ///functions/////
+function checkField(){
+	$(#input-fields).on('keyup', '#enter-button', function(e)){
+	
+	}
+
+}
 
 ///Create bookmark w/user input
 $('#enter-button').on('click', function(e){
