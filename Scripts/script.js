@@ -1,8 +1,16 @@
 ///functions/////
 
 ///Create bookmark w/user input
+	var $title = $('#web-title');
+	var $url = $('#web-url');
 
-
+$('#input-fields').on('click',function(e){
+	e.preventDefault();
+  var newTitle = $title.val();
+	var newUrl = $url.val();
+  $('.bm-title').text(newTitle);
+	$('.bm-url').text(newUrl);
+});
 
 
 
@@ -21,9 +29,13 @@
 
 
 ////Delete URl//////
+var $deleteBtn = $('delete-button');
 
+$($deleteBtn).on('click', function(e) {
+	e.preventDefault();
+	$('#side-bar p').remove('<a>');
 
-
+});
 
 
 ///Disable links//////
@@ -56,8 +68,3 @@
 
 
 //input event listener//
-$('#input-fields').on('click',function(e){
-	$webTitle =
-	$(this.#web-title).val();
-	$(this.#web-url).val();
-});
