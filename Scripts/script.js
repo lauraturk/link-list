@@ -1,4 +1,5 @@
 ///functions/////
+
 function checkFields (){
 	// $('form input[type="submit"]').prop('disabled', true);
 	console.log('blargh')
@@ -14,7 +15,6 @@ function errorMessage (){
 
 
 }
-
 
 
 
