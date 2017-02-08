@@ -1,22 +1,22 @@
 ///functions/////
 
 ///Create bookmark w/user input
-	var $title = $('#web-title');
-	var $url = $('#web-url');
-
-$('#input-fields').on('click',function(e){
+$('#enter-button').on('click', function(e){
 	e.preventDefault();
-  var newTitle = $title.val();
-	var newUrl = $url.val();
-  $('.bm-title').text(newTitle);
-	$('.bm-url').text(newUrl);
-});
+	$('#side-bar').append('<article><h2 class="bm-title">' + $('#web-title').val() + '</h2><hr><p class="bm-url"><a href="#">' + $('#web-url').val() + '</a></p><hr><button class="read-button">Read</button><buttonclass="delete-button">Delete</button></article>');
+	var n = $('article').length;
+	$('#saved-links').text(n + ' Links Saved');
+		});
 
 
 
 
 ///Mark as "read"
-
+$('#side-bar').on('click', '.read-button', function(){
+	$(this).toggleClass('read');
+	// var targetBtn = $(event.target);
+	// targetBtn.toggleClass('.read');
+});
 
 
 
@@ -46,7 +46,7 @@ $($deleteBtn).on('click', function(e) {
 
 
 
-///Keep count of links on page////
+///In the click event function: Keep count of links on page////
 
 
 
@@ -67,4 +67,3 @@ $($deleteBtn).on('click', function(e) {
 
 
 
-//input event listener//

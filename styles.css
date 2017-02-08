@@ -128,6 +128,11 @@ article	{
 	font-weight: 800;
 	font-size: 24px;
 }
+
+.read {
+	color: #F05A28;
+	font-weight: 800;
+}
 /*******media queries*******************/
 @media screen and (min-width: 700px){
 	#bm-three, #bm-four{
