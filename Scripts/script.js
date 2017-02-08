@@ -8,7 +8,10 @@
 
 
 ///Mark as "read"
-
+$('.read-button').on('click',function(event){
+	var targetBtn = $(event.target);
+	targetBtn.toggleClass('read');
+});
 
 
 
@@ -56,8 +59,8 @@
 
 
 //input event listener//
-$('#input-fields').on('click',function(e){
-	$webTitle =
-	$(this.#web-title).val();
-	$(this.#web-url).val();
-});
+// $('#input-fields').on('click',function(e){
+// 	$webTitle =
+// 	$(this.#web-title).val();
+// 	$(this.#web-url).val();
+// });
