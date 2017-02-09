@@ -45,10 +45,11 @@ $('#clear-all').on('click', function() {
 	$('#saved-links').text(n + ' Saved');
 })
 
-// function validateUrl (){
-// 	var $vldUrl = $('#web-url').val();
-// 	var validUrl= ^"(www.)?([a-zA-Z0-9]+).[a-zA-Z0-9]*.[‌a-z]{3}\.([a-z]+)?$";
-// 	if vldUrl !== validUrl{
-// 	$('#web-url').text('Please Enter Valid URL');
-// 	}
-// }
+function validateUrl (){
+	var $vldUrl = $('#web-url').val();
+	var validUrl= new RegExp( "^(www.)?([a-zA-Z0-9]+).[a-zA-Z0-9]*.[‌a-z]{3}\.([a-z]+)?$");
+	var test = validUrl.test($vldUrl);
+	if (test !== true){
+	alert('Please Enter Valid URL');
+	}
+}
