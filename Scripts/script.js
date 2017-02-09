@@ -36,16 +36,11 @@ $('#side-bar').on('click', '.read-button', function(){
 
 });
 
-// $('#side-bar').hover(function(){
-// 	$(this).toggleClass(':hover');
-// })
-
-
-
-
-////Remove Link from page///
-
-
+$('#side-bar').each('click', function(){
+	$(this).addClass('hover');
+}, function (){
+	$(this).removeClass('hover');
+})
 
 
 
@@ -55,22 +50,3 @@ $('#side-bar').on('click', '.delete-button',function() {
 		var n = $('article').length;
 		$('#saved-links').text(n + ' Saved');
 });
-
-
-///Disable links//////
-
-
-
-
-
-
-
-///In the click event function: Keep count of links on page////
-
-
-
-
-
-
-
-///Count of read and unread links on page///
