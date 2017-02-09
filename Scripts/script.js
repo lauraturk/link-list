@@ -36,6 +36,9 @@ $('#side-bar').on('click', '.read-button', function(){
 
 });
 
+// $('#side-bar').hover(function(){
+// 	$(this).toggleClass(':hover');
+// })
 
 
 
