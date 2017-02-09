@@ -75,6 +75,10 @@ article	{
 	width: 83%;
 }
 
+#enter-button:hover {
+	background-color: #FFD773;
+}
+
 #side-bar{
 	background-color: #cfd8dc;
 	/*border: 1px solid #455a64;*/
