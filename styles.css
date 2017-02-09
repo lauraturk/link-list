@@ -79,7 +79,7 @@ article	{
 	width: 90%;
 }
 
-#enter-button:hover {
+#enter-button:hover, #clear-all:hover {
 	background-color: #FFD773;
 }
 
